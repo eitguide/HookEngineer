@@ -8,20 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		8A16941B2579D2EA008CB3CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A16941A2579D2EA008CB3CD /* AppDelegate.m */; };
-		8A16941E2579D2EA008CB3CD /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A16941D2579D2EA008CB3CD /* SceneDelegate.m */; };
 		8A1694212579D2EA008CB3CD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1694202579D2EA008CB3CD /* ViewController.m */; };
 		8A1694242579D2EA008CB3CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A1694222579D2EA008CB3CD /* Main.storyboard */; };
 		8A1694262579D2EC008CB3CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A1694252579D2EC008CB3CD /* Assets.xcassets */; };
 		8A1694292579D2EC008CB3CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A1694272579D2EC008CB3CD /* LaunchScreen.storyboard */; };
 		8A16942C2579D2EC008CB3CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A16942B2579D2EC008CB3CD /* main.m */; };
+		8A169443257A02A0008CB3CD /* CydiaSubstrate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A169437257A0087008CB3CD /* CydiaSubstrate.framework */; };
+		8A169444257A02A0008CB3CD /* CydiaSubstrate.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8A169437257A0087008CB3CD /* CydiaSubstrate.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8A169445257A02A0008CB3CD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8A169444257A02A0008CB3CD /* CydiaSubstrate.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8A1694162579D2EA008CB3CD /* Engineer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Engineer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A1694192579D2EA008CB3CD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8A16941A2579D2EA008CB3CD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8A16941C2579D2EA008CB3CD /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		8A16941D2579D2EA008CB3CD /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		8A16941F2579D2EA008CB3CD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		8A1694202579D2EA008CB3CD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8A1694232579D2EA008CB3CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -29,6 +42,9 @@
 		8A1694282579D2EC008CB3CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A16942A2579D2EC008CB3CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A16942B2579D2EC008CB3CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8A169437257A0087008CB3CD /* CydiaSubstrate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CydiaSubstrate.framework; sourceTree = "<group>"; };
+		8A169438257A0087008CB3CD /* Cycript.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Cycript.framework; sourceTree = "<group>"; };
+		8A169440257A01DB008CB3CD /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A169443257A02A0008CB3CD /* CydiaSubstrate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +64,7 @@
 			children = (
 				8A1694182579D2EA008CB3CD /* Engineer */,
 				8A1694172579D2EA008CB3CD /* Products */,
+				8A169436257A0086008CB3CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +81,6 @@
 			children = (
 				8A1694192579D2EA008CB3CD /* AppDelegate.h */,
 				8A16941A2579D2EA008CB3CD /* AppDelegate.m */,
-				8A16941C2579D2EA008CB3CD /* SceneDelegate.h */,
-				8A16941D2579D2EA008CB3CD /* SceneDelegate.m */,
 				8A16941F2579D2EA008CB3CD /* ViewController.h */,
 				8A1694202579D2EA008CB3CD /* ViewController.m */,
 				8A1694222579D2EA008CB3CD /* Main.storyboard */,
@@ -74,6 +90,16 @@
 				8A16942B2579D2EC008CB3CD /* main.m */,
 			);
 			path = Engineer;
+			sourceTree = "<group>";
+		};
+		8A169436257A0086008CB3CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A169440257A01DB008CB3CD /* libz.tbd */,
+				8A169438257A0087008CB3CD /* Cycript.framework */,
+				8A169437257A0087008CB3CD /* CydiaSubstrate.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +112,7 @@
 				8A1694122579D2EA008CB3CD /* Sources */,
 				8A1694132579D2EA008CB3CD /* Frameworks */,
 				8A1694142579D2EA008CB3CD /* Resources */,
+				8A169445257A02A0008CB3CD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,7 +175,6 @@
 				8A1694212579D2EA008CB3CD /* ViewController.m in Sources */,
 				8A16941B2579D2EA008CB3CD /* AppDelegate.m in Sources */,
 				8A16942C2579D2EC008CB3CD /* main.m in Sources */,
-				8A16941E2579D2EA008CB3CD /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,7 +251,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -278,7 +304,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -293,7 +319,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C9MJ8RURYQ;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/CydiaSubstate.framework/Headers",
+				);
 				INFOPLIST_FILE = Engineer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,7 +344,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C9MJ8RURYQ;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/CydiaSubstate.framework/Headers",
+				);
 				INFOPLIST_FILE = Engineer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
